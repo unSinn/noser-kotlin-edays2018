@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   data-name="Layer 1"
+   viewBox="0 0 216 215.82733"
+   width="800"
+   height="800"
+   version="1.1"
+   id="svg39"
+   sodipodi:docname="kotlin_bg.svg"
+   inkscape:version="0.92.0 r15299">
+  <metadata
+     id="metadata43">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>logo_Kotlin</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     id="namedview41"
+     showgrid="false"
+     inkscape:zoom="0.64940687"
+     inkscape:cx="1410.5307"
+     inkscape:cy="651.43378"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg39"
+     units="px" />
+  <defs
+     id="defs21">
+    <linearGradient
+       id="b"
+       x1="-23.82"
+       y1="136.073"
+       x2="107.837"
+       y2="4.415"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,64.179213)">
+      <stop
+         offset=".108"
+         stop-color="#c757bc"
+         id="stop2" />
+      <stop
+         offset=".173"
+         stop-color="#cd5ca9"
+         id="stop4" />
+      <stop
+         offset=".492"
+         stop-color="#e8744f"
+         id="stop6" />
+      <stop
+         offset=".716"
+         stop-color="#f88316"
+         id="stop8" />
+      <stop
+         offset=".823"
+         stop-color="#ff8900"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="a"
+       x1="45.153999"
+       y1="173.00301"
+       x2="109.326"
+       y2="108.83"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset=".296"
+         stop-color="#00afff"
+         id="stop13" />
+      <stop
+         offset=".694"
+         stop-color="#5282ff"
+         id="stop15" />
+      <stop
+         offset="1"
+         stop-color="#945dff"
+         id="stop17" />
+    </linearGradient>
+    <linearGradient
+       id="c"
+       x1="-1.699"
+       y1="45.043999"
+       x2="43.319"
+       y2="0.026000001"
+       xlink:href="#a"
+       gradientTransform="translate(0,64.179213)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#a"
+       id="linearGradient4520"
+       gradientUnits="userSpaceOnUse"
+       x1="45.153999"
+       y1="173.00301"
+       x2="109.326"
+       y2="108.83"
+       gradientTransform="translate(0,64.179213)" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4548"
+       x="-0.2676"
+       width="1.5352"
+       y="-0.2676"
+       height="1.5352">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="15.775354"
+         id="feGaussianBlur4550" />
+    </filter>
+  </defs>
+  <title
+     id="title23">logo_Kotlin</title>
+  <g
+     id="g4526"
+     transform="translate(37.258499,-33.001048)"
+     style="opacity:0.361;filter:url(#filter4548)">
+    <g
+       transform="translate(0,64.179213)"
+       style="fill:#000400"
+       id="g31"
+       data-name="&lt;Group&gt;" />
+    <path
+       style="fill:url(#b)"
+       inkscape:connector-curvature="0"
+       id="path33"
+       d="M 71.035,70.173213 0,144.87521 v 66.781 l 70.932,-71.057 70.551,-70.425997 z" />
+    <path
+       style="fill:url(#linearGradient4520)"
+       inkscape:connector-curvature="0"
+       id="path35"
+       d="m 0,211.65621 70.932,-71.057 70.551,71.057 z"
+       data-name="&lt;Path&gt;" />
+    <path
+       style="fill:url(#c)"
+       inkscape:connector-curvature="0"
+       id="path37"
+       d="M 0,70.173213 H 71.035 L 0,144.87521 Z" />
+  </g>
+</svg>
