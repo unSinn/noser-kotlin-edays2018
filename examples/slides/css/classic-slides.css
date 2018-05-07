@@ -135,7 +135,7 @@ body {
 }
 
 .slide p {
-    text-align: center;
+    text-align: justify;
     margin: 0.7em;
     object-fit: contain;
 }
@@ -145,8 +145,12 @@ body {
 }
 
 /* Highlight.js used for coloring pre > code blocks. */
+.slide pre {
+  margin: auto;
+}
+
 .slide pre > code {
-    font-size: 14px;
+    font-size: 21px;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
@@ -210,6 +214,11 @@ img {
     width: 80%; /* or any custom size */
     height: 80%;
     object-fit: contain;
+}
+
+.slide .full {
+    width: 100%; /* or any custom size */
+    height: 100%;
 }
 
 .slide .right {
