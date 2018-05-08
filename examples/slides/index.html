@@ -65,13 +65,13 @@
 data class Ninja(val name: String, val weapons: List<String>)
 
 val ninja = Ninja("Fujibayashi", listOf("Sheriuken", "Katana"))
+println(ninja.name)
 println("$ninja")
-println("$ninja.name")
+println("${ninja.weapons.count()}")
 
-Ninja(name=Fujibayashi, weapons=[Sheriuken, Katana])
-Fujibayashi
-
-ninja.weapons.forEach { w -> w.holster() }</code></pre>
+// Fujibayashi
+// Ninja(name=Fujibayashi, weapons=[Sheriuken, Katana])
+// 2</pre></code>
     </div>
 
     <div class="step slide" data-rel-x="300" data-rel-y="1100" data-rotate="90">
@@ -99,7 +99,7 @@ var b: String? = "abc"
 b = null
 a = b // compilation error
 
-b?.length // safe call
+val k = b?.length // safe call, k is of nullable type "Int?"
 
 val l: Int
 l = b?.length ?: -1 // Elvis operator
@@ -107,30 +107,44 @@ l = b?.length ?: -1 // Elvis operator
     </div>
 
     <div class="step slide" data-rel-x="-800" data-rel-y="800" data-rotate="150">
-      <h2>Code Sample IV (DSL)</h2>
-      <pre><code>val v = village {
-          house {
-              person {
-                  name = "Kumawakamaru"
-                  age = 31
-              }
-              person {
-                  name = "Bob"
-                  age = 45
-              }
-              gold {
-                  amount = 500
-              }
-          }
-        }</code></pre>
+      <h2>Code Sample IV (Compatibility)</h2>
+      <pre><code>// Kotlin from Java
+Ninja n = new Ninja("Hans", listOf("bäse", "keule", "weggli"));
+ninja.getWeapons().forEach(System.out::println);
+
+// Java from Kotlin
+val f = File.createTempFile("p","f") // throws checked Exception
+System.out.println(f) // of Java
+
+val h = java.util.HashMap&ltString, String&gt()
+val j = h.get("x") ?: "nothing" // Elvis again, j is String
+h["x"]?.let { print(it) } // In case you only care if present</code></pre>
     </div>
 
     <div class="step slide" data-rel-x="-1100" data-rel-y="300" data-rotate="180">
-      <img class="full" src="images/radar.png">
-
+      <h2>Code Sample V (DSL)</h2>
+      <pre><code>val v = village {
+                house {
+                    person {
+                        name = "Kumawakamaru"
+                        age = 31
+                    }
+                    person {
+                        name = "Bob"
+                        age = 45
+                    }
+                    gold {
+                        amount = 500
+                    }
+                }
+              }</code></pre>
     </div>
 
     <div class="step slide" data-rel-x="-1100" data-rel-y="-300" data-rotate="210">
+      <img class="full" src="images/radar.png">
+    </div>
+
+    <div class="step slide" data-rel-x="-800" data-rel-y="-800" data-rotate="240">
       <h1>Strenghts</h1>
       <ul>
         <li>Many improved features over Java</li>
@@ -141,7 +155,7 @@ l = b?.length ?: -1 // Elvis operator
       </ul>
     </div>
 
-    <div class="step slide" data-rel-x="-800" data-rel-y="-800" data-rotate="240">
+    <div class="step slide" data-rel-x="-300" data-rel-y="-1100" data-rotate="270">
       <h1>Weaknesses</h1>
       <ul>
         <li>Devs need training (to profit from new concepts) -> cost</li>
@@ -151,14 +165,12 @@ l = b?.length ?: -1 // Elvis operator
       </ul>
     </div>
 
-    <div  class="step slide" data-rel-x="-300" data-rel-y="-1100" data-rotate="270">
-      <h1>Scenarios</h1>
-      devs:
+    <div class="step slide" data-rel-x="300" data-rel-y="-1100" data-rotate="300">
+      <h1>Scenarios</h1> devs:
       <pre><code>kotlin.try{ it.rocks() }</pre></code>
       </br>
       projects:
-      <p>Use Kotlin in wherever developer and customer acceptance is given.
-        Projects may need bigger initial efford, will yield better quality over time.
+      <p>Use Kotlin in wherever developer and customer acceptance is given. Projects may need bigger initial efford, will yield better quality over time.
       </p>
     </div>
 
@@ -167,14 +179,6 @@ l = b?.length ?: -1 // Elvis operator
     </div>
 
   </div>
-
-
-  <div id="impress-toolbar"></div>
-
-  <div class="impress-progressbar">
-    <div></div>
-  </div>
-  <div class="impress-progress"></div>
 
   <!-- Extra modules
      Load highlight.js, mermaid.js, markdown.js and MathJax.js from extras.
@@ -193,7 +197,7 @@ l = b?.length ?: -1 // Elvis operator
     impress().init();
   </script>
 
-<!--  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
+  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 
 </body>
 
